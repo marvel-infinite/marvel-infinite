@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    background-image: url("resources/marvel.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fefefe;
+    font-family: Castellar;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+}
+#logo{
+    position: fixed;
+    margin-top: 0;
+    margin-left:39% ;
+    height: 120px;
+    width: 250px;
+    background-image: url("resources/logo.png");
+    background-position: center;
+    background-size: 220px;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.addClassForAnimation{
+-webkit-animation: welcomeAnimation 2s linear 1;
+}
+
+@-webkit-keyframes welcomeAnimation {
+    0%{height: 190%; width: 190%; background-size: 190%; margin-left: -45%;}
+    70%{height: 100%; width: 100%; background-size: 100%; margin-left: 0;}
+    100%{height: 120px; width: 250px; background-size: 220px;}
+
+}
+#characterList{
+    height: 100%;
+    /*overflow: hidden;*/
+    margin-left: 0;
+    width: 200px;
+    border-right: 3px solid #ED1D24;
+    background-color: rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb{
+    height: 20px;
+    background-color: #ff0400;
+}
+::-webkit-scrollbar-track{
+    background-color: #242424;
+}
+#characterSection{
+    font-size: 25px;
+    text-align: center;
+    height: 115px;
+    border-bottom: 1px solid #ED1D24;
+    font-family: mainFont;
+    letter-spacing: 5px;
+    /*background-color: aqua;*/
+}
+#characterAlpha{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 83%;
+}
+.alpha {
+    font-size: 25px;
+    padding: 20px;
+    font-family: mainFont;
+    height: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    padding-top: 10px;
+    background-color: rgba(250, 0, 0, 0.3);
+    width: 80%;
+
+}
+.bottomBorderRed{
+    width: 100%;
+    height: 10px;
+    background: red;
+    -webkit-transform: skew(20deg);
+    margin-left: -170px;
+    transition: all ease-in-out .2s;
+}
+.bottomBorderBlack{
+    width: 120%;
+    height: 10px;
+    background: rgba(0,0,0,0.5);
+    -webkit-transform: skew(20deg);
+    margin-left: 10px;
+}
+.alpha:hover .bottomBorderRed{
+    width: 150%;
+}
+
+
+@font-face {
+    font-family: mainFont;
+    font-stretch: expanded;
+    src: url("fonts/BentonSans Comp Black Regular.otf");
+}
+
+#FactVideos{
+    position: fixed;
+    background: rgba(250,0,0,0);
+    height: 100%;
+    width: 280px;
+    top: 0;
+    right: 0;
+    border-left: 4px solid rgba(239,0,0,0.8);
+    overflow: hidden;
+}
+#titleVideos{
+    height: 20%;
+    width: 100%;
+    background: none;
+    font-size: 35px;
+    text-align: center;
+    height: 115px;
+    border-bottom: 1px solid #ED1D24;
+    font-family: mainFont;
+    letter-spacing: 7px;
+    padding-top: 30px;
+}
+#FactVideosList{
+    overflow: scroll;
+    height: 77%;
+    align-content: center;
+    text-align: center;
+}
+.factvideo{
+    cursor: pointer;
+    margin-left: 13.5px;
+    text-align: center;
+    background: rgba(180,0,0,0.4);
+    width: 90%;
+    border: 1px solid red;
+    overflow: scroll;
+}
+.factvideo > img{
+    height: 130px;
+    width: 200px;
+    border-radius: 10px;
+}
+.factvideo > h2{
+    margin-top: 1px;
+    font-family: MainFontLight;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+@font-face{
+    font-family: MainFontLight;
+    src: url("fonts/BentonSans Comp Light.otf");
+}
