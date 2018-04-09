@@ -1,0 +1,126 @@
+.loader{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 1000%;
+    background: url("resources/loading.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    visibility: visible;
+}
+.afterLoad{
+    background: url("resources/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-family: mainFont;
+    font-size: 20px;
+    letter-spacing: 20px;
+    text-shadow: 2px 5px 20px rgba(255,0,0,0.7);
+
+}
+.afterLoad > h1{
+    margin-left: 180px ;
+    margin-top: 180px;
+}
+@font-face {
+    font-family: mainFont;
+    font-stretch: expanded;
+    src: url("fonts/BentonSans Comp Black Regular.otf");
+}
+.button{
+    height: 90px;
+    cursor: pointer;
+    width: 170px;
+    font-family: mainFont;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 8px;
+    margin-top: 100px;
+    background-color: rgba(200,0,0,0.6);
+    outline: rgba(200,0,0,0.6);
+    border: none;
+    border-radius: 0;
+    margin-left: 190px;
+}
+
+.button > span{
+    margin-left: -40px;
+}
+#border1{
+    transition: all .3s linear;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -59px;
+    height: 2px;
+    width: 2px;
+    background-color: red;
+}
+#border2{
+    transition: all .3s linear;
+    position: absolute;
+    height: 2px;
+    width: 270px;
+    background-color: red;
+    margin-left: -106px;
+    margin-top: -59px;
+}
+#border2cover{
+    position: absolute;
+    height: 2px;
+    width: 272px;
+    background-color: black;
+    margin-left: -108px;
+    margin-top: -59px;
+    z-index: 20;
+    transition: all .3s linear;
+}
+.button:hover > #border1{
+    height: 191px;
+}
+.button:hover > #border2cover{
+    margin-left: -380px;
+}
+#border3{
+    transition: all .3s linear;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: red;
+    margin-left: -6px;
+    margin-top: 30px;
+}
+.button:hover > #border3{
+    width: 272px;
+}
+#border4{
+    transition: all .3s linear;
+    position: absolute;
+    margin-left: 164px;
+    margin-top: -159px;
+    height: 190px;
+    width: 2px;
+    background-color: red;
+}#border4cover{
+     transition: all .3s linear;
+     position: absolute;
+     margin-left: 164px;
+     margin-top: -159px;
+     height: 190px;
+     width: 2px;
+     background-color: black;
+ }
+.button:hover > #border4cover{
+    margin-top: -345px;
+}

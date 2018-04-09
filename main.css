@@ -26,8 +26,8 @@ body{
     background-repeat: no-repeat;
     z-index: 20;
 }
-.addClassForAnimation{
--webkit-animation: welcomeAnimation 2s linear 1;
+.additionalClassForAnimation{
+-webkit-animation: welcomeAnimation 4s linear 1;
 }
 
 @-webkit-keyframes welcomeAnimation {

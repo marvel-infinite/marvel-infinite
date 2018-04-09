@@ -1,11 +1,3 @@
-function main(){
-    let logo = document.getElementById('logo');
-    logo.classList.add('addClassForAnimation');
-    looper();
-}
-document.addEventListener('DOMContentLoaded',main,false);
-
-
 
 function FactVides(name,image){
     this.name = name;

@@ -3,8 +3,25 @@
     <meta charset="UTF-8">
     <title>Fanmade Marvel </title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="loader.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="loader" id="loader"></div>
+<div class="afterLoad" id="afterLoad">
+    <h1>Website Loaded<br> Successfully </h1>
+    <button id="enter" class="button" onclick="enter();load();"><span>Enter</span>
+        <div id="border1"></div>
+        <div id="border2"></div>
+        <div id="border2cover"></div>
+        <div id="border3"></div>
+        <div id="border4"></div><div id="border4cover"></div>
+    </button>
+</div>
+
     <div id="container">
         <div  id="logo"></div>
         <section id="characterList">
@@ -101,5 +118,15 @@
         </section>
     </div>
 </body>
-<script src="main.js"></script>
+<script>
+    function load(){
+        let logo = document.getElementById('logo');
+        logo.classList.add('additionalClassForAnimation');
+        looper();
+    }
+
+</script>
+<script src="main.js">
+</script>
+<script src="loader.js"></script>
 </html>
