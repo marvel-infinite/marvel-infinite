@@ -1,7 +1,4 @@
-$(document).on({
-    ajaxStart: function() {  },
-    ajaxStop: disaper()
-});
+var t =  setTimeout(disaper,6000);
 function enter() {
     var afterload = document.getElementById('afterLoad');
     afterload.style.visibility = 'hidden';
