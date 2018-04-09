@@ -1,4 +1,4 @@
-var t =  setTimeout(disaper,6000);
+var t =  setTimeout(disaper,11000);
 function enter() {
     var afterload = document.getElementById('afterLoad');
     afterload.style.visibility = 'hidden';
