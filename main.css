@@ -105,7 +105,8 @@ body{
     background-color: #242424;
 }
 #characterSection{
-    font-size: 25px;
+    font-size: 150%;
+    word-wrap: break-word;
     text-align: center;
     height: 115px;
     border-bottom: 1px solid #ED1D24;
