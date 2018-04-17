@@ -14,7 +14,7 @@
 <div class="afterLoad" id="afterLoad">
 
     <h1>Website Loaded<br> Successfully </h1>
-    <button id="enter" class="button" onclick="enter();load();"><span>Enter</span>
+    <button id="enter" class="button" onclick="enter();looad();"><span>Enter</span>
         <div id="border1"></div>
         <div id="border2"></div>
         <div id="border2cover"></div>
@@ -129,16 +129,33 @@
                 </div>
         </section>
     </div>
+    <div id="videoPlayer">
+        <div id="videoBox">
+            <span id="videoCloser" onclick="closeVideoBox()">&times;</span>
+            <hr>
+            <span id="videoTitle" class="videoTitle"></span>
+            <hr>
+            <div id="frameCont">
+                <iframe class="VideoFrame" id="videoFrame"></iframe>
+            </div>
+        </div>
+    </div>
 </body>
-<script>
-    function load(){
-        let logo = document.getElementById('logo');
-        logo.classList.add('additionalClassForAnimation');
-        looper();
+<script>function looper(){
+    for(let i = 0; i<FactsVideoRecources.length;i++){
+        FactVides(FactsVideoRecources[i].name,FactsVideoRecources[i].src,FactsVideoRecources[i].videSrc);
+        console.log(FactsVideoRecources[i]);
+    }
+}
+
+
+    function closeVideoBox() {
+        let videobox = document.getElementById('videoPlayer');
+        videobox.style.visibility = 'hidden';
     }
 
+
 </script>
-<script src="main.js">
-</script>
+<script src="main.js"></script>
 <script src="loader.js"></script>
 </html>

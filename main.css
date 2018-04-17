@@ -114,6 +114,60 @@ body{
     letter-spacing: 5px;
     /*background-color: aqua;*/
 }
+#videoPlayer{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 100;
+    visibility: hidden;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Black.ttf");
+}
+.videoTitle{
+    margin-left: 70px;
+}
+#videoBox{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 70%;
+    padding-top: 20px;
+    height: 100%;
+    position: absolute;
+    left: 15%;
+    background-color: rgba(220, 220, 220, 0.96);
+    font-family: Roboto,Calibri,Castellar;
+    color: black;
+    font-size: 40px;
+}
+#videoCloser{
+    position: fixed;
+    right: 16.5%;
+    top: -2px;
+    cursor: pointer;
+    color: rgba(200,0,0,0.6);
+}
+#videoCloser:hover{
+  -webkit-animation: closerRotater 600ms ease-in-out 2;
+}
+@-webkit-keyframes closerRotater {
+    from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+#frameCont{
+    margin-left: 70px;
+    height: 70%;
+    width: 70%;
+    background: rgba(0,0,0,0.25);
+
+}
+.VideoFrame{
+    height: 100%;
+    width: 100%;
+    border: inset 2px rgba(200,0,0,0.5);
+}
 #characterAlpha{
     overflow-y: scroll;
     overflow-x: hidden;
