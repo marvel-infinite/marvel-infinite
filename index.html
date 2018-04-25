@@ -122,6 +122,29 @@
             The shared storytelling palette known as the Marvel universe was unveiled in 1961, when Goodman responded to the growing interest in superhero books by commissioning writer Stan Lee and artist Jack Kirby to create the Fantastic Four. With the release of Fantastic Four no. 1 (November 1961), readers were introduced to a superheroic setting that was, nevertheless, rooted in the real world. Lee and Kirby attempted to make their comic book characters more original by allowing them to interact with each other in a realistic fashion, including heroes often fighting or arguing with each other. This trend continued with a flood of other superhero characters introduced by Marvel Comics during the early 1960s, including Spider-Man, the Incredible Hulk, and the X-Men. Lee wrote the majority of Marvel’s books during that time, and Jack Kirby and Steve Ditko were the most important and influential artists.
             </div>
         </section>
+        <section id="McuMovies"><br><br>
+            <div class="h1heading">
+                <div>
+                    MCU Movies
+                </div>
+            </div>
+            <br>
+           <br>
+             <!--[Example]--
+            <div class="movieCard">
+                <div class="Movietitle">Iron Man<div class="MovieBottomLine"></div> </div><br>
+                <img src="resources/Ironmanposter1.JPG" class="MoviePoster">
+                <div class="MovieDescription">
+                    Rating: PG-13<br><br>Release Date: May 02, 2008<br><br>Starring: Jon Favreau, Jeff Bridges, Terrence Howard, Gwyneth Paltrow, Samuel L. Jackson, Clark Gregg, Leslie Bibb, Robert Downey Jr., Shaun Toub, Faran Tahir<br><br>2008's Iron Man tells the story of Tony Stark, a billionaire industrialist and genius inventor who is kidnapped and forced to build a devastating weapon. Instead, using his intelligence and ingenuity, Tony builds a high-tech suit of armor and escapes captivity. When he uncovers a nefarious plot with global implications, he dons his powerful armor and vows to protect the world as Iron Man
+                    </div><br>
+                <div class="optionsForMovies"><center>
+                   <a href="https://openload.co/stream/c5N59EO9xzY~1524663218~47.247.0.0~nmo2D8VI?mime=true*" target="_blank"> <img src="resources/download.svg" class="download"></a>
+                <h5 class="downloadtext">Download The Movie</h5>
+                </center>
+                </div>
+            </div> <br><br> -->
+            <br><br<br>
+        </section>
         <section id="FactVideos">
             <div id="titleVideos">Fact<br>Videos</div>
                 <div id="FactVideosList">
@@ -150,8 +173,10 @@
 
 
     function closeVideoBox() {
+        let video = document.getElementById('videoFrame');
         let videobox = document.getElementById('videoPlayer');
         videobox.style.visibility = 'hidden';
+        video.src = "";
     }
 
 

@@ -13,7 +13,7 @@
     visibility: visible;
 }
 .afterLoad{
-    background: url("resources/bg1.jpg"), black;
+    background: url("resources/bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
