@@ -63,7 +63,7 @@ body{
     z-index: 20;
 }
 .additionalClassForAnimation{
--webkit-animation: welcomeAnimation .4s linear 1;
+-webkit-animation: welcomeAnimation 4s linear 1;
 }
 
 @-webkit-keyframes welcomeAnimation {
