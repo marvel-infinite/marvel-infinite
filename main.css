@@ -30,7 +30,7 @@ body{
     padding-right: 30px ;
     padding-top: 25px;
     font-family: MainFontLight;
-    font-size: 20px;
+    font-size: 90%;
     letter-spacing: 2px;
 }
 .h1heading{
@@ -63,7 +63,7 @@ body{
     z-index: 20;
 }
 .additionalClassForAnimation{
--webkit-animation: welcomeAnimation 4s linear 1;
+-webkit-animation: welcomeAnimation .4s linear 1;
 }
 
 @-webkit-keyframes welcomeAnimation {
@@ -75,7 +75,8 @@ body{
 #mainSection{
     width: 65%;
     overflow: visible;
-    height: 50%;
+    height: auto;
+    padding-bottom: 20px;
     margin-top: 1px;
     margin-left:15% ;
     background: rgba(0,0,0,0.4);
@@ -83,7 +84,7 @@ body{
 #McuMovies{
     width: 65%;
     overflow: visible;
-    height: 50%;
+    height: auto;
     margin-top: 0;
     margin-left:15% ;
     background: rgba(0,0,0,0.4);
@@ -109,39 +110,50 @@ body{
 .MoviePoster{
     position: absolute;
     background: rgba(0,0,0,0.7);
-    margin: 40px;
-    margin-top: 0;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    height: 62.3%;
+    width: 20%;
+    box-sizing: border-box;
+
 }
 .MovieDescription{
+    box-sizing: border-box;
     float: right;
     width: 54%;
     background: rgba(0,0,0,0.75);
+    margin-top: 20px;
     height: auto;
     font-family: Calibri;
     font-weight: 200;
     font-size: 16px;
     padding: 20px;
+    padding-bottom: 100px;
     padding-left: 20px !important;
     text-align: left;
 }
 .MovieBottomLine{
+    box-sizing: border-box;
     width: 120%;
     transform: skew(30deg);
     height: 11px;
     margin-left: -20%;
+    float: right;
     background: rgba(200,0,0,0.5);
 }
 .optionsForMovies{
-    position: inherit;
-    width: 80%;
-    margin-left: 10%;
-    height: 100px;
+    box-sizing: border-box;
+    float: right !important;
+    width: 55%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    height: auto;
     background: rgba(20,0,0,0.7);
-    border-radius: 10px;
-    margin-top: 60%;
-
+    margin-right: 0;
 }
 .downloadtext{
+    box-sizing: border-box;
     margin-top: 8px;
     letter-spacing: 7px;
 }
@@ -204,7 +216,8 @@ body{
     src: url("fonts/Roboto-Black.ttf");
 }
 .videoTitle{
-    margin-left: 70px;
+    margin-left: 90px;
+    letter-spacing: 5px;
 }
 #videoBox{
     overflow-x: hidden;
@@ -214,10 +227,14 @@ body{
     height: 100%;
     position: absolute;
     left: 15%;
-    background-color: rgba(220, 220, 220, 0.96);
+    background-color: rgba(206, 204, 204,0.8);
     font-family: Roboto,Calibri,Castellar;
     color: black;
     font-size: 40px;
+}
+.characternodec{
+    color: white;
+    text-decoration: none;
 }
 #videoCloser{
     position: fixed;
@@ -234,10 +251,14 @@ body{
     to{-webkit-transform: rotate(360deg)}
 }
 #frameCont{
-    margin-left: 70px;
-    height: 70%;
-    width: 70%;
-    background: rgba(0,0,0,0.25);
+    margin-left: 90px;
+    height: 450px;
+    width: 750px;
+    background: url("resources/loading.gif"),rgba(0,0,0,0.25);
+    background-size: 850px 710px;
+    background-position: 43% 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 .VideoFrame{

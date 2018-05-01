@@ -165,7 +165,7 @@ function MovieCreator(name,poster,description,download){
     href.appendChild(dimg);
     center.appendChild(href);
     const dText = document.createElement('h5');
-    dText.innerHTML = 'Download The Movie';
+    dText.innerHTML = 'Download<br> The<br> Movie';
     dText.setAttribute('class','downloadtext');
     center.appendChild(dText);
     opt.appendChild(center);

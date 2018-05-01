@@ -1,0 +1,102 @@
+body{
+    background: url('marvel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: #fefefe;
+    font-family: Avenge;
+    margin: 0;
+
+}
+
+
+
+.bgCover{
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: rgba(0,0,0,0.67);
+}
+
+@font-face{
+    font-family: Avenge;
+    src: url("AVENGEANCE HEROIC AVENGER AT.ttf");
+}
+.title{
+    margin: 0;
+    margin-top: 0;
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    background-color: rgba(190,0,0,0);
+}
+.title > .char{
+    height: 100%;
+    background: url("character.png");
+    background-size: cover;
+    width: 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+}
+.hr{
+    border: 2px solid red;
+    width: 60%;
+    border-bottom: rgba(0,0,0,0);
+}
+table{
+    border: 2px solid transparent;
+    width: 100%;
+    padding: 20px;
+    border-collapse: separate;
+    border-spacing: 20px;
+    height: 20%;
+    overflow: scroll;
+
+}
+
+
+td{
+    width: 150px;
+    border:  1px solid rgba(222,0,0,0.9);
+    text-align: center;
+    padding: 10px;
+    font-family: Avenge,Calibri;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+td:nth-child(even){
+    background: rgba(200,0,0,0.4);
+
+}
+td:nth-child(odd){
+    background-color: rgba(0,0,0,0.6);
+}
+td:nth-child(odd)> img{
+    border: 1px solid cyan;
+}td:nth-child(even)> img{
+    border: 1px solid red;
+}
+td > img{
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    height: 80px;
+    transition: all .15s ease-in-out;
+    width: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+td:hover > img{
+    border: 4px solid red;
+}td:nth-child(even):hover > img{
+    border: 4px solid cyan;
+}
